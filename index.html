@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Login - Gestão de Colaboradores</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <img src="logo.svg" alt="Logo Santa Casa" class="logo">
+            <h1>Departamento de Recursos Humanos</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <div class="login-card">
+                <h2><i class="fas fa-user-lock"></i> Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" name="usuario" required placeholder="Digite seu nome de usuário">
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn">Entrar</button>
+                    </div>
+                    <div class="form-group">
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Lógica do formulário de login
+        const formLogin = document.getElementById("login-form");
+
+        formLogin.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const usuario = document.getElementById("usuario").value;
+            const senha = document.getElementById("senha").value;
+
+
+            // Aqui você pode verificar as credenciais com seu backend
+            console.log({
+                usuario: usuario,
+                senha: senha
+            });
+
+            // Simulação de login bem-sucedido
+            if (usuario === "admin" && senha === "admin123") {
+                alert("Login bem-sucedido!");
+                // Redireciona para a página de Dashboard
+                window.location.href = "Novo Documento de Texto.html";
+            } else {
+                alert("Usuário ou senha incorretos!");
+            }
+        });
+    </script>
+</body>
+
+</html>

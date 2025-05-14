@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="colaboradores.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Gestão de Colaboradores</title>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <img src="logo.svg" alt="Logo Santa Casa" class="logo">
+      <h1>Departamento de Recursos Humanos</h1>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="colaboradores.html"><i class="fas fa-users"></i> Colaboradores</a>
+    <a href="#ponto"><i class="fas fa-clock"></i> Ponto</a>
+    <a href="#folha"><i class="fas fa-file-invoice-dollar"></i> Folha de Pagamento</a>
+    <a href="#vagas"><i class="fas fa-briefcase"></i> Vagas Internas</a>
+    <a href="#documentos"><i class="fas fa-file-alt"></i> Documentos</a>
+    <a href="#avaliacoes"><i class="fas fa-chart-line"></i> Avaliações</a>
+    <a href="#relatorios"><i class="fas fa-chart-bar"></i> Relatórios</a>
+    <a href="#config"><i class="fas fa-cogs"></i> Configurações</a>
+  </nav>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main>
+    <section>
+      <h2>Colaboradores</h2>
+
+      <!-- Botão para Adicionar Novo Colaborador -->
+      <button id="addColaborador" class="btn">Cadastrar Novo Colaborador</button>
+
+      <!-- Campo de Pesquisa -->
+      <div class="search-container">
+        <input type="text" id="search" placeholder="Pesquisar por nome ou cargo..." />
+      </div>
+
+      <!-- Tabela de Colaboradores -->
+      <table id="colaboradoresTable">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Cargo</th>
+            <th>Status</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Os dados serão inseridos aqui via JS -->
+        </tbody>
+      </table>
+
+
+    </section>
+ 
+  <!-- Overlay para tela de fundo -->
+  <div id="form-overlay" class="overlay"></div>
+  
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p><strong>Sistema de Gerenciamento de RH</strong> &copy; 2025. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a> |
+        <a href="#">Termos de Uso</a> |
+        <a href="#">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

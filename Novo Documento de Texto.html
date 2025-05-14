@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Controle Interno - RH | Santa Casa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="cropped-favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <img src="logo.svg" alt="Logo Santa Casa" class="logo">
+      <h1>Departamento de Recursos Humanos</h1>
+    </div>
+  </header>
+  
+  <nav class="site-nav">
+    <a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+    <a href="colaboradores.html"><i class="fas fa-users"></i> Colaboradores</a>
+    <a href="#ponto"><i class="fas fa-clock"></i> Ponto</a>
+    <a href="#folha"><i class="fas fa-file-invoice-dollar"></i> Folha de Pagamento</a>
+    <a href="#vagas"><i class="fas fa-briefcase"></i> Vagas Internas</a>
+    <a href="#documentos"><i class="fas fa-file-alt"></i> Documentos</a>
+    <a href="#avaliacoes"><i class="fas fa-chart-line"></i> Avaliações</a>
+    <a href="#relatorios"><i class="fas fa-chart-bar"></i> Relatórios</a>
+    <a href="#config"><i class="fas fa-cogs"></i> Configurações</a>
+  </nav>
+  
+  <main>
+    <!-- ÁREA DO COLABORADOR -->
+    <section id="colaboradores">
+      <h2><i class="fas fa-users"></i> Área do Colaborador</h2>
+  
+      <div class="card-grid">
+        <div class="card card-shadow">
+          <i class="fas fa-user-plus fa-2x"></i>
+          <h3>Cadastro de Colaborador</h3>
+          <p>Realize o cadastro de novos colaboradores de forma prática.</p>
+          <button id="btnCadastrar" class="btn">Cadastrar Colaborador</button>
+        </div>
+  
+        <div class="card card-shadow">
+          <i class="fas fa-id-card fa-2x"></i>
+          <h3>Atualização Cadastral</h3>
+          <p>Atualize seus dados pessoais junto ao RH sem complicação.</p>
+          <a href="#" class="btn">Atualizar</a>
+        </div>
+  
+        <div class="card card-shadow">
+          <i class="fas fa-money-check-alt fa-2x"></i>
+          <h3>Acesso ao Holerite</h3>
+          <p>Visualize e baixe seu contracheque mensal de forma segura.</p>
+          <a href="#" class="btn">Acessar</a>
+        </div>
+      </div>
+    </section>
+  
+    <!-- ÁREA GESTÃO ADMINISTRATIVA -->
+    <section id="gestao-admin">
+      <h2><i class="fas fa-briefcase"></i> Gestão Administrativa</h2>
+  
+      <div class="card-grid">
+        <div class="card card-shadow">
+          <i class="fas fa-users-cog fa-2x"></i>
+          <h3>Gestão de Equipes</h3>
+          <p>Acompanhe e organize as equipes de forma eficiente.</p>
+          <a href="#" class="btn">Gerenciar Equipes</a>
+        </div>
+  
+        <div class="card card-shadow">
+          <i class="fas fa-calendar-check fa-2x"></i>
+          <h3>Controle de Férias</h3>
+          <p>Consulte e aprove férias de forma automatizada.</p>
+          <a href="#" class="btn">Controlar Férias</a>
+        </div>
+  
+        <div class="card card-shadow">
+          <i class="fas fa-clock fa-2x"></i>
+          <h3>Jornada de Trabalho</h3>
+          <p>Gerencie horários, escalas e banco de horas.</p>
+          <a href="#" class="btn">Ver Jornada</a>
+        </div>
+      </div>
+    </section>
+  
+    <!-- ÁREA DOCUMENTAÇÃO -->
+    <section id="documentos">
+      <h2><i class="fas fa-folder-open"></i> Documentação</h2>
+  
+      <div class="card-grid">
+        <div class="card card-shadow">
+          <i class="fas fa-file-upload fa-2x"></i>
+          <h3>Envio de Documentos</h3>
+          <p>Envie documentos de forma segura e rápida.</p>
+          <a href="#" class="btn">Enviar</a>
+        </div>
+  
+        <div class="card card-shadow">
+          <i class="fas fa-archive fa-2x"></i>
+          <h3>Histórico de Arquivos</h3>
+          <p>Acesse os documentos enviados anteriormente.</p>
+          <a href="#" class="btn">Ver Histórico</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+  <footer>
+    <div class="footer-content">
+      <p><strong>Sistema de Gerenciamento de RH</strong> &copy; 2025. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Política de Privacidade</a> |
+        <a href="#">Termos de Uso</a> |
+        <a href="#">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
